@@ -4,10 +4,7 @@
         xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
         extensionBindingPrefixes="xjc"
         version="2.1">
-    <bindings schemaLocation="../../../target/generated-sources/trang/rfc4287/rfc4287.xsd">
-        <schemaBindings>
-            <package name="nz.net.foobar.atom" />
-        </schemaBindings>
+    <bindings scd="x-schema::atom" xmlns:atom="http://www.w3.org/2005/Atom">
         <bindings node="/xs:schema/xs:group[@name='atomInlineTextContent']/xs:sequence/xs:element[@name='content']">
             <elementName prefix="InlineText" />
         </bindings>
@@ -21,4 +18,5 @@
             <elementName prefix="OutOfLine" />
         </bindings>
     </bindings>
+    <bindings scd="x-schema::app" xmlns:app="http://www.w3.org/2007/app"></bindings>
 </bindings>
